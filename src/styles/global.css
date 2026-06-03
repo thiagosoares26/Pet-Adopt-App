@@ -1,19 +1,16 @@
-/* ==========================================================================
-   1. CONFIGURAÇÕES GERAIS E VARIÁVEIS (Paleta Verde Musgo & Vinho)
-   ========================================================================== */
 :root {
-  --primary-color: #3b5a41;       /* Verde Musgo - Principal / Confiança */
-  --primary-hover: #2d4532;       /* Verde Musgo Escuro - Interações */
-  --secondary-color: #802329;     /* Vinho / Terracota - Afeto / Favoritos */
-  --secondary-hover: #611a1e;     /* Vinho Escuro */
-  --background-site: #f4f6f4;     /* Off-White Clean */
-  --background-card: #ffffff;     /* Branco puro para blocos e cards */
-  --text-main: #2b332c;           /* Cinza grafite muito escuro */
-  --text-muted: #606c61;          /* Cinza médio para subtítulos */
-  --border-color: #dbdedb;        /* Bordas sutis */
-  --error-color: #d9383a;         /* Vermelho para feedbacks de erro */
-  --success-color: #2e7d32;       /* Verde para feedbacks de sucesso */
-  --radius: 12px;                 /* Cantos arredondados modernos */
+  --primary-color: #7b5339;       
+  --primary-hover: #ab836a;       
+  --secondary-color: #802329;    
+  --secondary-hover: #611a1e;    
+  --background-site: #ffe5d4;     
+  --background-card: #c59c86;     
+  --text-main: #000000;           
+  --text-muted: #000000;          
+  --border-color: #dbdedb;       
+  --error-color: #d9383a;        
+  --success-color: #2e7d32;    
+  --radius: 12px;               
   --shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   --transition: all 0.25s ease;
 }
@@ -31,7 +28,6 @@ body {
   line-height: 1.6;
 }
 
-/* Splash Screen / Loading de Sessão Inicial */
 .splash-screen {
   display: flex;
   justify-content: center;
@@ -44,7 +40,6 @@ body {
   background-color: var(--background-site);
 }
 
-/* Botões Gerais */
 button {
   font-family: inherit;
   cursor: pointer;
@@ -53,16 +48,13 @@ button {
   transition: var(--transition);
 }
 
-/* ==========================================================================
-   2. TELAS DE AUTENTICAÇÃO (Login e Cadastro)
-   ========================================================================== */
 .auth-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 20px;
-  background: linear-gradient(135deg, #e4e9e4 0%, #f4f6f4 100%);
+  background: linear-gradient(135deg, #ffe5d4 0%, #ffe5d4 100%);
 }
 
 .auth-card {
@@ -115,7 +107,7 @@ button {
 
 .form-group input:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(59, 90, 65, 0.15);
+  box-shadow: 0 0 0 3px rgba(171, 131, 106, 0.15);
 }
 
 .btn-auth {
@@ -127,7 +119,7 @@ button {
   font-weight: 600;
   border-radius: 8px;
   margin-top: 10px;
-  box-shadow: 0 4px 10px rgba(59, 90, 65, 0.2);
+  box-shadow: 0 4px 10px rgba(171, 131, 106, 1);
 }
 
 .btn-auth:hover:not(:disabled) {
@@ -180,9 +172,6 @@ button {
   text-decoration: underline;
 }
 
-/* ==========================================================================
-   3. TELA PRINCIPAL (Home Layout, Header e Filtros)
-   ========================================================================== */
 .home-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -217,7 +206,7 @@ button {
 }
 
 .btn-nav-favorites:hover {
-  background-color: rgba(128, 35, 41, 0.05);
+  background-color: rgba(171, 131, 106, 1);
 }
 
 .btn-logout {
@@ -232,7 +221,6 @@ button {
   background-color: #d2d7d2;
 }
 
-/* Filtro de Busca */
 .search-section {
   text-align: center;
   margin-bottom: 40px;
@@ -280,9 +268,6 @@ button {
   background-color: var(--primary-hover);
 }
 
-/* ==========================================================================
-   4. ESTADOS DA INTERFACE (Loading, Erro, Lista Vazia)
-   ========================================================================== */
 .main-content {
   min-height: 300px;
 }
@@ -338,9 +323,6 @@ button {
   margin-bottom: 20px;
 }
 
-/* ==========================================================================
-   5. COMPONENTE REUTILIZÁVEL: PETCARD E GRID
-   ========================================================================== */
 .pets-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -423,7 +405,7 @@ button {
 .btn-favorite:hover {
   background-color: #fcebeb;
   color: var(--secondary-color);
-  border-color: rgba(128, 35, 41, 0.2);
+  border-color: rgba(171, 131, 106, 0.2);
 }
 
 .btn-favorite.active {
@@ -433,9 +415,6 @@ button {
   font-weight: 600;
 }
 
-/* ==========================================================================
-   6. TELA DE DETALHES DO PET
-   ========================================================================== */
 .details-container {
   max-width: 900px;
   margin: 0 auto;
@@ -517,7 +496,6 @@ button {
   border-color: var(--secondary-color);
 }
 
-/* Grid de Especificações */
 .pet-specs-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -537,7 +515,6 @@ button {
   color: var(--primary-color);
 }
 
-/* Descrição e Contato */
 .pet-description {
   margin-bottom: 36px;
 }
@@ -597,9 +574,6 @@ button {
   transform: translateY(-1px);
 }
 
-/* ==========================================================================
-   7. TELA DE FAVORITOS (Layout específico)
-   ========================================================================== */
 .favorites-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -620,7 +594,6 @@ button {
   color: var(--secondary-color);
 }
 
-/* Responsive fixes adicionais */
 @media (max-width: 600px) {
   .auth-card {
     padding: 24px 16px;
