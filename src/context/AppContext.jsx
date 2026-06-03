@@ -36,7 +36,6 @@ export const AppProvider = ({ children }) => {
   };
 
   const toggleFavorite = (pet) => {
-  // Encontra usando o ._id correto do MongoDB
   const exists = favorites.find(fav => fav._id === pet._id);
   
   if (exists) {
