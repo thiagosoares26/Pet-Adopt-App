@@ -5,14 +5,12 @@ import { registerUser } from '../services/api';
 export const Register = () => {
   const navigate = useNavigate();
 
-  // Estados do formulário
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState(''); 
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   
-  // Estados de feedback
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
